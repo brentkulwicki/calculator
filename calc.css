@@ -1,0 +1,93 @@
+body {
+    background-image: url('wood-background.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+/*The h1 is being used for the screen of the calculator. It's being manipultaed using 
+innerHTML */
+h1 {
+    background-color: tan;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+}
+button {
+    color: white;
+    background-color: black;
+    border-color: lightgray;
+    box-sizing: border-box;
+    outline: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    margin: 0;
+}
+button:active {
+    border-color: black;
+}
+/*This is the outline of the calculator itself. This is what you would pick up if it were a
+physical calc.*/
+#calc_outline {
+    background-color: grey;
+    width: 50%;
+    max-width: 350px;
+    min-width: 205px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    padding: 20px;
+    min-height: 300px;
+    max-height: 50vh;
+    border-bottom: solid black 3px;
+    border-right: solid black 3px;
+    border-left: transparent;
+    border-top: transparent;
+    border-style: outset;
+    box-shadow: 5px 5px 20px;
+    border-radius: 4px;
+}
+/* These are the column layouts for the calculators. There are four columns of buttons
+that sit on top of the other buttons. The 4 columns include 3 buttons each first column is 
+7,4,1 second column is 8,5,2 third column is 9,6,3 and fourth column is /,x,- */
+#first_column,
+#second_column,
+#third_column,
+#fourth_column {
+    width: 25%;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+}
+#standard_buttons {
+    width: 100%;
+}
+/*The non-standard buttons are 0, C . + and = They have been laid out this way because 
+the top section needed 4 columns while this section needs just 2 otherwise I was having a 
+problem with getting the bigger buttons to line up properly */
+#nonstandard_buttons {
+    clear: both;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+#bot_column_one,
+#bot_column_two,
+#decimal_container,
+#addition_container {
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    float:left;
+}
+#all_buttons {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+#screen {
+    border: 1px solid grey;
+    border-style: inset;
+}
